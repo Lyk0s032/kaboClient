@@ -1,0 +1,281 @@
+.project{
+    box-sizing: border-box;
+    height: 100%;
+    .PrincipalProjects{
+        width:90%;
+        margin:auto;
+
+        .containerThisPage{
+            width:100%;
+            display: flex;
+            height:100%;
+            box-sizing: border-box;
+            .smallTextLeft{
+                width:50%;
+                box-sizing: border-box;
+                height: 100%;
+
+                .containerLeft{
+                    height: 100%;
+                    border:1px  solid white;
+                    box-sizing: border-box;
+                    .head{
+                        height: auto;
+                        margin-top:45%;
+                        
+                        h1{
+                            font-size: 62px;
+                        }
+                        strong{
+                            font-size: 18px;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+
+            .smallRightProjects{
+                width:50%;
+                box-sizing: border-box;
+
+                .scrollProjects{
+                    height:100%;
+                    overflow-y: auto;
+
+                    .smallText{
+                        padding:10px;
+                        box-sizing: border-box;
+                        height: auto;
+
+                        span{
+                            font-size: 16px;
+                            color: #666;
+                        }
+                    }
+                    .loading{
+                        width:50%;
+                        margin:auto;
+                        height: auto;
+                        margin-top:30%;
+                        img{
+                            width:100%;
+                        }
+                    }
+                    .listProjects{
+
+                        .title-seccion{
+                            height: auto;
+                            padding:10px 10px;
+                            padding-top:20px;
+                            box-sizing: border-box;
+                            span{
+                                font-size: 15px;
+                                color: #3b5998;
+                                font-weight: bold;
+                            }
+                        }
+                        .projectItem{
+                            width:90%;
+                            box-sizing: border-box;
+                            height: auto;
+                            padding:10px;
+                            cursor: pointer;
+                            transition: .3s;
+                            .containerItem{
+                                width:100%;
+                                box-sizing: border-box;
+                                display: flex;
+                                height: auto;
+                                align-items: center;
+                                .img{
+                                    width:30%;
+                                    box-sizing: border-box;
+                                    text-align: center;
+                                    img{
+                                        width:80%;
+                                        margin: auto;
+                                        border-radius: 5px;
+                                        object-fit: contain;
+                                    }
+                                }
+                                .containerBuild{
+                                    width:70%;
+                                    box-sizing: border-box;
+                                    padding:10px;
+                                    box-sizing: border-box;
+
+                                    .topInformation{
+                                        padding:10px 0px;
+                                        h3{
+                                            font-weight: 100;
+                                            color: #3b5998;
+                                            margin:10px 0px;
+                                        }
+                                        span{
+                                            font-size: 14px;
+                                            color: #666;
+                                        }
+                                    }
+                                    .tags{
+                                        padding:10px 0px;
+                                        box-sizing: border-box;
+
+                                        button{
+                                            margin-right: 10px;
+                                            padding:5px 10px;
+                                            border:1px solid #ccc;
+                                            border-radius: 20px;
+
+                                            span{
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .projectItem:hover{
+                            transform: translateX(5%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .boxSectorProjects{
+            margin-top:30px;
+            width:100%;
+
+            .title{
+                padding:30px 0px;
+                box-sizing: border-box;
+
+                h3{
+                    color: #3b5998;
+                    font-weight: 100;
+                }
+            }
+
+            .containerProjects{
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+
+                .p{
+                    width:32%;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    border:1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    padding:20px;
+                    box-sizing: border-box;
+                    height:150px;
+                    transition: .3s;
+                    cursor: pointer;
+                    .img{
+                        width:40%;
+                        padding:10px;
+                        box-sizing: border-box;
+                        img{
+                            width:100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .fastDesc{
+                        width:60%;
+                        padding:5px 20px;
+                        box-sizing: border-box;
+                        height:auto;
+                        h3{
+                            color:black;
+                            font-size: 14px;
+                        }
+                        span{
+                            font-size: 12px;
+                            color: #666
+                        }
+                        .lenguajes{
+                            width:100%;
+                            display: flex;
+                            justify-content: start;
+
+                            .lenguage{
+                                width:10%;
+                                margin:10px;
+                                margin-left:0px;
+                                img{
+                                    width:100%;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .p:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:900px){
+    .project{
+        height: auto;
+        padding-top:50px;
+        .PrincipalProjects{
+            .containerThisPage{
+                display: block;
+                .smallTextLeft{
+                    height: auto;
+                    width:100%;
+                    margin:auto;
+                    .containerLeft{
+                        padding:20px 0px;
+                        box-sizing: border-box;
+                        .head{
+                            height: auto;
+                            margin-top:50px;
+                        }
+                    }
+                    
+                }
+                .smallRightProjects{
+                    width:100%;
+                    box-sizing: border-box;
+                    margin-top:20px;
+
+                    .scrollProjects{
+                        overflow-y: none;
+
+                        .listProjects{
+                            .projectItem{
+                                width:100%;
+
+                                .containerItem{
+                                    display: block;
+                                    .img{
+                                        width:100%;
+
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    .containerBuild{
+                                        width:100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

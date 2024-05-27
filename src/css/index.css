@@ -1,0 +1,1308 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #6F7E8C;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow-y: hidden;
+}
+.project {
+  box-sizing: border-box;
+  height: 100%;
+}
+.project .PrincipalProjects {
+  width: 90%;
+  margin: auto;
+}
+.project .PrincipalProjects .containerThisPage {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft {
+  width: 50%;
+  box-sizing: border-box;
+  height: 100%;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft {
+  height: 100%;
+  border: 1px  solid white;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft .head {
+  height: auto;
+  margin-top: 45%;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft .head h1 {
+  font-size: 62px;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft .head strong {
+  font-size: 18px;
+}
+.project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft .head span {
+  font-size: 14px;
+  color: #666;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects {
+  width: 50%;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects {
+  height: 100%;
+  overflow-y: auto;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .smallText {
+  padding: 10px;
+  box-sizing: border-box;
+  height: auto;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .smallText span {
+  font-size: 16px;
+  color: #666;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .loading {
+  width: 50%;
+  margin: auto;
+  height: auto;
+  margin-top: 30%;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .loading img {
+  width: 100%;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .title-seccion {
+  height: auto;
+  padding: 10px 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .title-seccion span {
+  font-size: 15px;
+  color: #3b5998;
+  font-weight: bold;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem {
+  width: 90%;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .img {
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .img img {
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .topInformation {
+  padding: 10px 0px;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .topInformation h3 {
+  font-weight: 100;
+  color: #3b5998;
+  margin: 10px 0px;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .topInformation span {
+  font-size: 14px;
+  color: #666;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .tags {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .tags button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild .tags button span {
+  font-size: 12px;
+}
+.project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem:hover {
+  transform: translateX(5%);
+}
+.project .PrincipalProjects .boxSectorProjects {
+  margin-top: 30px;
+  width: 100%;
+}
+.project .PrincipalProjects .boxSectorProjects .title {
+  padding: 30px 0px;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .boxSectorProjects .title h3 {
+  color: #3b5998;
+  font-weight: 100;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p {
+  width: 32%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .img {
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .img img {
+  width: 100%;
+  object-fit: contain;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc {
+  width: 60%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  height: auto;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc h3 {
+  color: black;
+  font-size: 14px;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc span {
+  font-size: 12px;
+  color: #666;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc .lenguajes {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc .lenguajes .lenguage {
+  width: 10%;
+  margin: 10px;
+  margin-left: 0px;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p .fastDesc .lenguajes .lenguage img {
+  width: 100%;
+}
+.project .PrincipalProjects .boxSectorProjects .containerProjects .p:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 900px) {
+  .project {
+    height: auto;
+    padding-top: 50px;
+  }
+  .project .PrincipalProjects .containerThisPage {
+    display: block;
+  }
+  .project .PrincipalProjects .containerThisPage .smallTextLeft {
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft {
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+  .project .PrincipalProjects .containerThisPage .smallTextLeft .containerLeft .head {
+    height: auto;
+    margin-top: 50px;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects {
+    overflow-y: none;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem {
+    width: 100%;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem {
+    display: block;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .img {
+    width: 100%;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .img img {
+    width: 100%;
+  }
+  .project .PrincipalProjects .containerThisPage .smallRightProjects .scrollProjects .listProjects .projectItem .containerItem .containerBuild {
+    width: 100%;
+  }
+}
+.app {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  position: relative;
+  height: 100%;
+}
+.app .left {
+  width: 8%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  top: 0;
+  border-right: 1px solid #ccc;
+  bottom: 0;
+}
+.app .containt {
+  width: 92%;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+.app .hidden {
+  width: 100%;
+  display: none;
+}
+.app .hidden button {
+  border-radius: 5px;
+  background-color: #5e72e4;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+.app .hidden button span {
+  color: white;
+  font-size: 14px;
+}
+.app .hidden strong {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
+}
+.app .hidden .tags-h {
+  width: 100%;
+  margin-top: 10px;
+}
+.app .hidden .tags-h span {
+  font-size: 14px;
+  color: #ccc;
+}
+.app .viewProject {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+.app .viewProject .modalView {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-right: 0px;
+  margin: auto;
+}
+.app .viewProject .modalView .loading {
+  width: 30%;
+  margin: auto;
+  margin-top: 10%;
+  height: auto;
+}
+.app .viewProject .modalView .loading img {
+  width: 100%;
+}
+.app .viewProject .modalView .boxView {
+  height: 100%;
+}
+.app .viewProject .modalView .boxView .containerView {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.app .viewProject .modalView .boxView .containerView .leftNavButton {
+  display: none;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject {
+  width: 30%;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation {
+  height: auto;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .img {
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  height: auto;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .name {
+  margin: 20px 0px;
+  height: auto;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .name h1 {
+  font-weight: 100;
+  font-size: 32px;
+  margin: 5px;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .name span {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .btns {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .btns button {
+  width: 50%;
+  border-radius: 20px;
+  background-color: #19A6DA;
+  border: none;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .btns button span {
+  color: white;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .topInformation .btns button:hover {
+  transform: scale(1.1);
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .enlace {
+  height: auto;
+  margin-top: auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .enlace button {
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .enlace button span {
+  font-style: italic;
+  color: #19A6DA;
+}
+.app .viewProject .modalView .boxView .containerView .leftProject .enlace button:hover span {
+  text-decoration: underline;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint {
+  height: 100%;
+  width: 70%;
+  box-sizing: border-box;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv {
+  height: 100%;
+  overflow-y: scroll;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation {
+  height: auto;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .header {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .header h3 {
+  font-weight: 100;
+  color: #666;
+  font-size: 16px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView {
+  padding: 10px 0px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  height: 250px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots .scrollHorizontal {
+  width: auto;
+  display: flex;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots .scrollHorizontal .screenshot {
+  width: 500px;
+  height: 100%;
+  margin-right: 30px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots .scrollHorizontal .screenshot img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .description span {
+  font-size: 13px;
+  color: #666;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px 0px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore .header-box {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore .header-box .icon {
+  align-items: center;
+  color: #666;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore .header-box span {
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+  margin: 0px 10px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore .desc {
+  padding: 0px 10px;
+  padding-left: 25px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore .desc span {
+  font-size: 14px;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags button {
+  width: 20%;
+  border-radius: 5px;
+  border: 1px solid #5e72e4;
+  background-color: white;
+  margin: 10px;
+  padding: 5px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags button span {
+  font-size: 12px;
+  color: #5e72e4;
+  transition: 0.3s;
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags button:hover {
+  background-color: #5e72e4;
+  transform: scale(1.1);
+}
+.app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags button:hover span {
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .app .left {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 15%;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+  }
+  .app .containt {
+    width: 100%;
+    height: auto;
+  }
+  .app .hidden {
+    display: block;
+  }
+  .app .viewProject {
+    position: fixed;
+    z-index: 6;
+  }
+  .app .viewProject .modalView {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  .app .viewProject .modalView .boxView {
+    width: 100%;
+    margin: 0px;
+    z-index: 6;
+  }
+  .app .viewProject .modalView .boxView .containerView {
+    display: block;
+  }
+  .app .viewProject .modalView .boxView .containerView .leftNavButton {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 0px 10px;
+    display: block;
+  }
+  .app .viewProject .modalView .boxView .containerView .leftNavButton button {
+    padding: 10px 0px ;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .app .viewProject .modalView .boxView .containerView .leftNavButton button .icon {
+    color: black;
+    font-size: 26px;
+  }
+  .app .viewProject .modalView .boxView .containerView .leftNavButton button:hover {
+    background-color: transparent;
+    border: none;
+  }
+  .app .viewProject .modalView .boxView .containerView .leftProject {
+    display: none;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint {
+    width: 100%;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView {
+    width: 100%;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots {
+    overflow-x: auto;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots .scrollHorizontal .screenshot {
+    width: 300px;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .screenshots .scrollHorizontal .screenshot img {
+    object-fit: contain;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .more .boxMore {
+    width: 100%;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .subBoxView .contSubBoxView .tags {
+    display: none;
+  }
+  .app .viewProject .modalView .boxView .containerView .rightContaint .scrollDiv .generalInformation .H {
+    display: none;
+  }
+}
+.leftNav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.leftNav .nav {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: block;
+}
+.leftNav .nav ul {
+  height: auto;
+}
+.leftNav .nav ul li {
+  display: block;
+  cursor: pointer;
+}
+.leftNav .nav ul li div {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.leftNav .nav ul li div .icon {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #ccc;
+  transition: 0.3s;
+}
+.leftNav .nav ul li div span {
+  font-size: 12px;
+  color: #ccc;
+  transition: 0.3s;
+}
+.leftNav .nav ul li.active div .icon {
+  font-size: 24px;
+  color: #666;
+}
+.leftNav .nav ul li.active div span {
+  font-weight: bold;
+  color: #666;
+}
+.leftNav .nav.Bottom-options {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+}
+@media screen and (max-width: 900px) {
+  .leftNav {
+    display: block;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .leftNav .nav {
+    text-align: center;
+  }
+  .leftNav .nav ul {
+    height: auto;
+    width: 100%;
+  }
+  .leftNav .nav ul li {
+    margin: 0px 10px;
+    display: inline-block;
+  }
+  .leftNav .nav.Bottom-options {
+    margin-top: 0px;
+    display: none;
+  }
+}
+.home {
+  height: auto;
+}
+.home .firstSeccion {
+  height: auto;
+}
+.home .twoSeccion {
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.home .twoSeccion .container {
+  display: flex;
+  align-items: center;
+}
+.home .twoSeccion .container .avatarLeft {
+  width: 40%;
+  box-sizing: border-box;
+}
+.home .twoSeccion .container .avatarLeft .avatar {
+  width: 100%;
+  height: 350px;
+}
+.home .twoSeccion .container .avatarLeft .avatar img {
+  width: 90%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+.home .twoSeccion .container .rightContainer {
+  width: 60%;
+  box-sizing: border-box;
+}
+.home .twoSeccion .container .rightContainer .titleDescription {
+  width: 70%;
+}
+.home .twoSeccion .container .rightContainer .titleDescription h1 {
+  font-size: 42px;
+  color: black;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+.home .twoSeccion .container .rightContainer .titleDescription span {
+  font-size: 16px;
+  color: #666;
+  font-weight: 100;
+}
+.home .twoSeccion .container .rightContainer .titleDescription .socialMedia {
+  margin-top: 20px;
+}
+.home .twoSeccion .container .rightContainer .titleDescription .socialMedia .networking {
+  width: 100%;
+}
+.home .twoSeccion .container .rightContainer .titleDescription .socialMedia .networking button {
+  margin: 0x 20px;
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.home .twoSeccion .container .rightContainer .titleDescription .socialMedia .networking button .icon {
+  font-size: 24px;
+}
+.home .twoSeccion .container .rightContainer .titleDescription .socialMedia .networking button:hover {
+  transform: scale(1.1);
+}
+.home .skills {
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 30px;
+}
+.home .skills .title {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.home .skills .title h1 {
+  color: #666;
+  font-weight: 100;
+  font-size: 22px;
+}
+.home .skills .containerSkills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .skills .containerSkills .skill {
+  margin: 50px 0px;
+  width: 45%;
+}
+.home .skills .containerSkills .skill .smallTitle {
+  padding: 20px 0px;
+  text-align: center;
+}
+.home .skills .containerSkills .skill .smallTitle h3 {
+  color: #3b5998;
+  font-weight: 100;
+  font-size: 16px;
+}
+.home .skills .containerSkills .skill .listItems {
+  width: 90%;
+  margin: auto;
+}
+.home .skills .containerSkills .skill .listItems .containerItems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .skills .containerSkills .skill .listItems .containerItems .item {
+  width: 10%;
+  margin: 20px 5%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home .skills .containerSkills .skill .listItems .containerItems .item img {
+  width: 100%;
+  object-fit: contain;
+}
+.home .skills .containerSkills .skill .listItems .containerItems .item:hover {
+  transform: scale(1.1);
+}
+.home .someFixs {
+  box-sizing: border-box;
+}
+.home .someFixs .titleFix {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.home .someFixs .titleFix h3 {
+  font-weight: 100;
+  font-size: 32px;
+}
+.home .someFixs .sliderFixs {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+.home .someFixs .sliderFixs .marquee {
+  display: block;
+  position: relative;
+  animation: scroll 15s linear infinite;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+.home .someFixs .sliderFixs .marquee .item {
+  height: 100%;
+  float: left;
+  margin: 0px 2.5%;
+  width: 5%;
+}
+.home .someFixs .sliderFixs .marquee .item img {
+  object-fit: contain;
+  width: 100%;
+}
+.home .lastProjects {
+  width: 90%;
+  margin: 30px auto;
+}
+.home .lastProjects .title {
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.home .lastProjects .title h3 {
+  font-weight: 100;
+  font-size: 26px;
+  margin-left: 40px;
+}
+.home .lastProjects .containerProjects {
+  margin: 20px 0px;
+}
+.home .lastProjects .containerProjects .twoProjects {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .lastProjects .containerProjects .twoProjects .box {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #31BB84;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.home .lastProjects .containerProjects .twoProjects .box .header strong {
+  font-size: 14px;
+  color: white;
+}
+.home .lastProjects .containerProjects .twoProjects .box .header h3 {
+  font-weight: 100;
+  font-size: 25px;
+  color: white;
+  margin: 10px 0px;
+}
+.home .lastProjects .containerProjects .twoProjects .box .header span {
+  font-size: 12px;
+  color: white;
+}
+.home .lastProjects .containerProjects .twoProjects .box .containerWallpaper {
+  margin: 40px auto;
+  margin-bottom: 10px;
+  height: 300px;
+}
+.home .lastProjects .containerProjects .twoProjects .box .containerWallpaper img {
+  width: 100%;
+  object-fit: contain;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details {
+  margin-top: 30px;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details button {
+  width: 45%;
+  margin: 0px 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details button span {
+  font-size: 14px;
+  color: white;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details button:hover {
+  transform: scale(1.1);
+}
+.home .lastProjects .containerProjects .twoProjects .box .details .dtl {
+  width: 40%;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details .dtl span {
+  color: white;
+  transition: 0.3s;
+}
+.home .lastProjects .containerProjects .twoProjects .box .details .dtl:hover span {
+  text-decoration: underline;
+}
+.home .lastProjects .containerProjects .twoProjects .box.Gray {
+  background-color: #778B8F;
+}
+@media screen and (max-width: 900px) {
+  .home {
+    padding-top: 50px;
+  }
+  .home .twoSeccion {
+    width: 95%;
+  }
+  .home .twoSeccion .container {
+    display: block;
+    text-align: center;
+  }
+  .home .twoSeccion .container .avatarLeft {
+    margin: auto;
+  }
+  .home .twoSeccion .container .rightContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .home .twoSeccion .container .rightContainer .titleDescription {
+    width: 100%;
+  }
+  .home .twoSeccion .container .rightContainer .titleDescription span {
+    font-size: 14px;
+  }
+  .home .skills {
+    width: 95%;
+  }
+  .home .skills .title h1 {
+    font-size: 16px;
+  }
+  .home .skills .containerSkills {
+    display: block;
+    margin-top: 30px;
+  }
+  .home .skills .containerSkills .skill {
+    width: 100%;
+    margin: 0px;
+  }
+  .home .skills .containerSkills .skill .smallTitle {
+    display: none;
+  }
+  .home .skills .containerSkills .skill .listItems {
+    width: 100%;
+  }
+  .home .skills .containerSkills .skill .listItems .containerItems .item {
+    width: 12%;
+  }
+  .home .skills .containerSkills .skill .listItems .containerItems .item img {
+    opacity: 0.5;
+  }
+  .home .skills .containerSkills .skill .listItems .containerItems .item:hover img {
+    opacity: 1;
+  }
+  .home .someFixs {
+    display: none;
+  }
+  .home .someFixs .titleFix {
+    width: 95%;
+  }
+  .home .someFixs .titleFix h3 {
+    font-size: 16px;
+  }
+  .home .someFixs .sliderFixs .marquee .item {
+    width: 10%;
+  }
+  .home .lastProjects {
+    width: 95%;
+  }
+  .home .lastProjects .title {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px;
+  }
+  .home .lastProjects .title h3 {
+    margin: 0px;
+    font-size: 16px;
+  }
+  .home .lastProjects .containerProjects .twoProjects {
+    display: block;
+  }
+  .home .lastProjects .containerProjects .twoProjects .box {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  .home .lastProjects .containerProjects .twoProjects .box .header {
+    width: 60%;
+  }
+  .home .lastProjects .containerProjects .twoProjects .box .containerWallpaper {
+    height: auto;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .home .lastProjects .containerProjects .twoProjects .box .details {
+    width: 100%;
+  }
+  .home .lastProjects .containerProjects .twoProjects .box .details button {
+    width: 50%;
+  }
+}
+@keyframes scroll {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.sliderProject {
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px;
+  position: relative;
+}
+.sliderProject .containerSlider {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  transition: 0.3s;
+}
+.sliderProject .containerSlider .scroll {
+  width: 2000px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+.sliderProject .containerSlider .scroll .project {
+  width: 280px;
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 0px 1.5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.sliderProject .containerSlider .scroll .project .subProject {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.sliderProject .containerSlider .scroll .project .subProject .wallpaper {
+  width: 100%;
+  position: absolute;
+}
+.sliderProject .containerSlider .scroll .project .subProject .wallpaper img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.sliderProject .containerSlider .scroll .project.Navigation {
+  position: relative;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .opacityWallpaper {
+  background: url('https://th.bing.com/th/id/OIP.6iFDDdWI7M3HJm5P2A0qhAHaFP?rs=1&pid=ImgDetMain');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 1;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore .go {
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore .go h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore .go span {
+  color: white;
+  font-size: 14px;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore .go button {
+  margin-top: 30px;
+  width: 80%;
+  border: 1px solid white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.sliderProject .containerSlider .scroll .project.Navigation .containerMore .go button span {
+  color: black;
+  font-size: 12px;
+}
+.sliderProject .containerSlider .scroll .project.Active {
+  z-index: 1;
+  box-sizing: border-box;
+  align-items: center;
+  width: 850px;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .wallpaper {
+  width: 100%;
+  position: absolute;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .wallpaper img {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 100%;
+  object-fit: fill;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .opacity {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper {
+  transition: 0.3s;
+  position: relative;
+  width: 50%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking {
+  height: auto;
+  transition: 0.3s;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking h1 {
+  color: white;
+  margin: 10px 0px;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking span {
+  color: white;
+  font-size: 12px;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn {
+  margin-top: 10px;
+  display: flex;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn button {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn button .icon {
+  color: black;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn button span {
+  margin-left: 10px;
+  vertical-align: middle;
+  color: black;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn button:hover {
+  transform: scale(1.1);
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn .details {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #666;
+  align-items: center;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn .details .icon {
+  color: white;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.sliderProject .containerSlider .scroll .project.Active .subProject .descWallpaper .informationWorking .btn .details span {
+  vertical-align: middle;
+  color: white;
+}
+.sliderProject .controllers-nav {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  padding: 10px 20px;
+}
+.sliderProject .controllers-nav .btns {
+  height: auto;
+  z-index: 3;
+}
+.sliderProject .controllers-nav .btns button {
+  z-index: 2;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sliderProject .controllers-nav .btns button .icon {
+  font-size: 16px;
+  color: white;
+}
+.sliderProject .controllers-nav .btns button:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+@media screen and (max-width: 900px) {
+  .sliderProject {
+    height: 300px;
+    display: none;
+  }
+  .sliderProject .containerSlider .scroll .project.project.Active {
+    position: relative;
+    width: 18%;
+  }
+}
