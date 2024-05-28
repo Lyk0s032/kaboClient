@@ -65,7 +65,7 @@ function App() {
         </div>
         <div className='containt' id="routesScroll">
           {
-            !load || !projects ? <Loading />
+            load || !projects ? <Loading />
             :
             <Routes>
               <Route path="/*" element={<PanelRoutes load={load} projects={projects} /> } />
