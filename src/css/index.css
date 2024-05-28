@@ -583,6 +583,14 @@ body {
     width: 100%;
     height: auto;
   }
+  .app .containt .loading {
+    margin-top: 70%;
+    width: 90%;
+    margin-left: auto;
+  }
+  .app .containt .loading .containerLoad h1 {
+    font-size: 30px;
+  }
   .app .hidden {
     display: block;
   }
