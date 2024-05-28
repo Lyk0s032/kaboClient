@@ -284,6 +284,25 @@ body {
   height: 100%;
   overflow-y: auto;
 }
+.app .containt .loading {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.app .containt .loading .containerLoad {
+  height: auto;
+}
+.app .containt .loading .containerLoad h1 {
+  font-size: 42px;
+  color: #0072e5;
+  font-weight: 100;
+}
+.app .containt .loading .containerLoad span {
+  color: #666;
+  font-size: 12px;
+}
 .app .hidden {
   width: 100%;
   display: none;

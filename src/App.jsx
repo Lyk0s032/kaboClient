@@ -10,6 +10,7 @@ import * as actions from './components/store/actions/actions';
 import { useDispatch, useSelector } from 'react-redux'
 import ViewProject from './components/g/viewProject'
 import PanelRoutes from './components/panelRoutes'
+import Loading from './components/loading/loading'
 
 function App() {
   const dispatch = useDispatch();
@@ -64,7 +65,7 @@ function App() {
         </div>
         <div className='containt' id="routesScroll">
           {
-            load == true || !projects ? <h1>Cargando....</h1>
+            load || !projects ? <Loading />
             :
             <Routes>
               <Route path="/*" element={<PanelRoutes load={load} projects={projects} /> } />
