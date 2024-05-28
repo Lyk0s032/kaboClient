@@ -30,7 +30,7 @@ export default function Home(props){
                <div className='container'>
                     <div className='avatarLeft'>
                         <div className='avatar'>
-                            <img src="https://res.cloudinary.com/dr8pv3hga/image/upload/v1716847617/avatar.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dr8pv3hga/image/upload/v1716928021/me/meWallpaper_b3alz6.png" alt="" />
                         </div>
                     </div>
                     <div className='rightContainer'>
@@ -48,7 +48,9 @@ export default function Home(props){
                                 }}>
                                     <FaInstagram className='icon' />
                                 </button>
-                                <button>
+                                <button onClick={() =>{
+                                    window.open('https://linkedin.com/in/kevinbolaños')
+                                }}>
                                     <FaLinkedin className='icon' />
                                 </button>
                                 <button onClick={() => {

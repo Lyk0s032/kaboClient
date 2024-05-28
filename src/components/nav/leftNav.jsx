@@ -31,7 +31,9 @@ export default function LeftNav(){
             <nav className='nav Bottom-options'>
                 <ul>
                     <li>
-                        <div>
+                        <div onClick={() => {
+                            window.open('https://drive.google.com/file/d/1wzrmdio9-1YkOzrEG-yVFFlNEalqfJ3Q/view', "_blank")
+                        }}>
                             <GoDesktopDownload className='icon' /><br />
                             <span>CV</span>
                         </div>
