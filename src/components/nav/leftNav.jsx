@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineWindows } from 'react-icons/ai';
 import { GoDesktopDownload, GoHome, GoHomeFill } from 'react-icons/go';
 import { RouterProvider, useLocation, useNavigate } from 'react-router-dom';
 export default function LeftNav(){
@@ -20,7 +21,7 @@ export default function LeftNav(){
                     </li>
                     <li className={location.pathname == '/p' ? 'active' : null}>
                         <div onClick={() => navigation('/p')}>
-                            <GoHome className='icon' /><br />
+                            <AiOutlineWindows className='icon' /><br />
                             <span>Proyectos</span>
                         </div>
                     </li>
