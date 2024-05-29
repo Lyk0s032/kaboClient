@@ -805,6 +805,183 @@ body {
 .home .twoSeccion .container .rightContainer .titleDescription .socialMedia .networking button:hover {
   transform: scale(1.1);
 }
+.home .pilarsContainer {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 50px auto;
+}
+.home .pilarsContainer .containerPilar {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #E6ECF8;
+  border-radius: 10px;
+  box-shadow: -1px 15px 23px -15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 15px 23px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 15px 23px -15px rgba(0, 0, 0, 0.75);
+}
+.home .pilarsContainer .containerPilar .pilar {
+  padding: 20px 0px;
+  width: 33%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.home .pilarsContainer .containerPilar .pilar .header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+.home .pilarsContainer .containerPilar .pilar .header .icon {
+  background-color: #5BE9B9;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.home .pilarsContainer .containerPilar .pilar .header .icon .iconPilar {
+  font-size: 30px;
+  color: black;
+}
+.home .pilarsContainer .containerPilar .pilar .header .tl {
+  padding: 10px 0px;
+  width: 90%;
+  margin: auto;
+}
+.home .pilarsContainer .containerPilar .pilar .header .tl h3 {
+  font-size: 22px;
+  margin: 20px 0px;
+}
+.home .pilarsContainer .containerPilar .pilar .header .tl span {
+  font-size: 16px;
+  color: #666;
+  font-weight: 100;
+}
+.home .pilarsContainer .containerPilar .pilar .header .tl span strong {
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion {
+  width: 90%;
+  text-align: center;
+  margin: 40px auto;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion h3 {
+  color: #19A6DA;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion .res span {
+  color: #141c3a;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion .navSeccion ul {
+  width: 100%;
+  text-align: center;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion .navSeccion ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.home .pilarsContainer .containerPilar .pilar .seccion .navSeccion ul li span {
+  font-weight: 100;
+  color: #141c3a;
+  font-size: 14px;
+}
+.home .pilarsContainer .containerPilar .pilar:hover {
+  transform: scale(1.05);
+  border: none;
+}
+.home .pilarsContainer .containerPilar .pilar.Center {
+  border: 1px solid #E6ECF8;
+  border-top: none;
+  border-bottom: none;
+}
+.home .pilarsContainer .containerPilar .pilar.Center:hover {
+  transform: none;
+}
+.home .lastItemProjects {
+  width: 90%;
+  padding: 20px 0px;
+  margin: 100px auto;
+  margin-bottom: 0px;
+}
+.home .lastItemProjects .title {
+  padding: 10px 0px;
+}
+.home .lastItemProjects .title h1 {
+  font-weight: 100;
+}
+.home .lastItemProjects .title span {
+  color: #666;
+  font-size: 14px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .wallpaper {
+  width: 50%;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .wallpaper img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc {
+  width: 40%;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .res h1 {
+  font-weight: 100;
+  margin: 10px 0px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .res span {
+  color: #666;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn {
+  margin-top: 20px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn button {
+  width: 40%;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn button span {
+  color: white;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn .link {
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn .link span {
+  color: #3b5998;
+}
+.home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .btn button:hover {
+  transform: scale(1.1);
+}
+.home .lastItemProjects .containerLastProjects .containerLast.Reverse {
+  flex-direction: row-reverse;
+}
+.home .fotter {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+}
+.home .fotter img {
+  width: 100%;
+  object-fit: contain;
+}
 .home .skills {
   width: 90%;
   box-sizing: border-box;

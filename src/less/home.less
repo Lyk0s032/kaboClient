@@ -74,6 +74,207 @@
         }
     }
 
+    .pilarsContainer{
+        box-sizing: border-box;
+        width:90%;
+        margin:50px auto;
+        .containerPilar{
+            margin-top:10px;
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border:1px solid #E6ECF8;
+            border-radius: 10px;
+            box-shadow: -1px 15px 23px -15px rgba(0,0,0,0.75);
+            -webkit-box-shadow:-1px 15px 23px -15px rgba(0,0,0,0.75);
+            -moz-box-shadow:-1px 15px 23px -15px rgba(0,0,0,0.75);
+
+            .pilar{
+                padding:20px 0px;
+                width:33%;
+                box-sizing: border-box;
+                transition: .3s;
+                .header{
+                    width:100%;
+                    text-align: center;
+                    padding:20px 0px;
+                    .icon{
+                        background-color: #5BE9B9;
+                        border-radius: 100%;
+                        width:100px;
+                        height:100px;
+                        margin:auto;
+                        .iconPilar{ 
+                            font-size: 30px;
+                            color: black;
+                        }
+                        
+                    }
+                    .tl{
+                        padding:10px 0px;
+                        width:90%;
+                        margin:auto;
+                        h3{
+                            font-size: 22px;
+                            margin:20px 0px;
+                        }
+                        span{
+                            font-size: 16px;
+                            color: #666;
+                            font-weight: 100;
+
+                            strong{
+                                font-style: italic;
+                                color: black;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .seccion{
+                    width:90%;
+                    text-align: center;
+                    margin:40px auto;
+                    h3{
+                        color: #19A6DA;
+                        font-weight: 100;
+                        margin:10px 0px;
+                    }
+                    .res{
+                        span{
+                            color: #141c3a;
+                        }
+                    }
+                    .navSeccion{
+                        ul{
+                            width:100%;
+                            text-align: center;
+                            
+                            li{
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                                padding:10px 0px;
+                                
+                                span{
+                                    font-weight: 100;
+                                    color: #141c3a;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pilar:hover{
+                transform: scale(1.05);
+                border:none;
+            }
+            .pilar.Center{
+                border:1px solid #E6ECF8;
+                border-top:none;
+                border-bottom: none;
+
+            }
+            .pilar.Center:hover{
+                transform: none;
+            }
+        }
+    }
+
+    .lastItemProjects{
+        width:90%;
+        padding:20px 0px;
+        margin:100px auto;
+        margin-bottom: 0px;
+        .title{
+            padding:10px 0px;
+
+            h1{
+                font-weight: 100;
+
+            }
+            span{
+                color: #666;
+                font-size: 14px;
+            }
+        }
+
+        .containerLastProjects{
+            .containerLast{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin:100px 0px;
+                .wallpaper{
+                    width: 50%;
+
+                    img{
+                        width:100%;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+                .desc{
+                    width:40%;
+                    
+                    .containerDesc{
+                        .res{
+                            h1{
+                                font-weight: 100;
+                                margin:10px 0px;
+                            }
+                            span{
+                                color: #666;
+                            }
+                        }
+                        .btn{
+                            margin-top:20px;
+
+                            button{
+                                width:40%;
+                                background-color: #3b5998;
+                                border:1px solid #3b5998;
+                                padding:10px;
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                transition: .3s;
+                                border-radius: 5px;
+                                span{
+                                    color: white;
+                                }
+                            }
+                            .link{
+                                background-color: transparent;
+                                border: none;
+                                margin-left:20px;
+
+                                span{
+                                    color: #3b5998;
+                                }
+                            }
+                            button:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+            .containerLast.Reverse{
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    .fotter{
+        width:50%;
+        margin:auto;
+        margin-top:100px;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
     .skills{
         width:90%;
         box-sizing: border-box;

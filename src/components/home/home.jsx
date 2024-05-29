@@ -1,11 +1,13 @@
 import React from 'react';
 import Slider from './sliders';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { AiFillHome } from 'react-icons/ai';
+import { useSearchParams } from 'react-router-dom';
 
 export default function Home(props){
     const carga = props.carga;
     const projects = props.projects;
-
+    const [params , setParams ] = useSearchParams();
     const listFix = [
         {name:'AdobeXD', img: 'https://rongcon.net/wp-content/uploads/2020/12/adobe-xd-2020-build-35-2-12-ban-luot-bo-creative-cloud-phan-mem-thiet-ke-ux-ui_5fdb46e005ac2-768x768.png'},
         {name:'Slack', img: 'https://th.bing.com/th/id/OIP.zQx4lAQ4wDnsHavraLPzOQHaHa?rs=1&pid=ImgDetMain'},
@@ -65,160 +67,241 @@ export default function Home(props){
                     </div>
                </div>
             </div>
-
-            <div className='skills'>
-                <div className='title'>
-                    <h1>Algunas habilidades</h1>
-                </div>
-
-                <div className='containerSkills'>
-                    <div className='skill'>
-                        <div className='smallTitle'>
-                            <h3>Desarrollo web</h3>
-                        </div>
-                        <div className='listItems'>
-                            <div className='containerItems'>
-                                <div className='item'>
-                                    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_168875.png" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://th.bing.com/th/id/OIP.DN7ToydkJZEdVaJVK_NhvwAAAA?rs=1&pid=ImgDetMain" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://th.bing.com/th/id/OIP.bI8KDjd8-nDvzTX_Uok7FwHaHa?rs=1&pid=ImgDetMain" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://katrinayates.github.io/resume/img/logos/css3.png" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png" alt="" />
-                                </div>
-                                
-                                <div className='item'>
-                                    <img src="https://th.bing.com/th/id/R.40c0ab13ebdb348c12da438b21ca9ee5?rik=fkjjRZlg6AIErA&pid=ImgRaw&r=0" alt="" />
-                                </div>
-                                
-                                
-                                <div className='item'>
-                                    <img src="https://th.bing.com/th/id/R.ca5246ac49ffa139a8253653cdbe94cd?rik=eIZRfRO3avsmCQ&pid=ImgRaw&r=0" alt="" />
-                                </div>
+            <div className='pilarsContainer'>
+                <div className='containerPilar'>
+                <div className='pilar'>
+                        <div className='header'>
+                            <div className='icon'>
+                                <AiFillHome className='iconPilar' />
                             </div>
-                        </div>
-                    </div>
-
-                    <div className='skill'>
-                        <div className='smallTitle'>
-                            <h3>Desarrollo Backend</h3>
-                        </div>
-                        <div className='listItems'>
-                            <div className='containerItems'>
-                                <div className='item'>
-                                    <img src="https://logodix.com/logo/1764875.png" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://www.dicoding.com/blog/wp-content/uploads/2022/04/logo-express-js-1024x626.png" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://th.bing.com/th/id/R.9d460ec0196c99cdb14cb98647305309?rik=%2b64YtxB0LZSCTg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpython-logo-png-open-2000.png&ehk=OtjI1WIsGN2xW1l53b3QwDql%2fKrtBvqmXkwe8GhANPY%3d&risl=&pid=ImgRaw&r=0" alt="" />
-                                </div>
-                                
-                                <div className='item'>
-                                    <img src="https://w7.pngwing.com/pngs/657/27/png-transparent-postgresql-original-wordmark-logo-icon.png" alt="" />
-                                </div>
-                                <div className='item'>
-                                    <img src="https://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='skill'>
-                        <div className='smallTitle'>
-                            <h3>Desarrollo Mobile</h3>
-                        </div>
-                        <div className='listItems'>
-                            <div className='containerItems'>
-                                <div className='item'>
-                                    <img src="https://www.onu.ro/wp/wp-content/uploads/2020/03/react-native-logo-768x890.png" alt="" />
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='someFixs'>
-                <div className='titleFix'>
-                    <h3>Algunas herramientas</h3>
-                </div>
-                <div className='sliderFixs'>
-                    <div className='marquee'>
-                        {
-                            listFix.map((item, i) =>  {
-                                return(
-                                    <div className='item' key={i+1}>
-                                        <img className='fix' src={item.img} alt="" />
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
-
-            <div className='lastProjects'>
-                <div className='title'>
-                    <h3>Últimos proyectos</h3>
-                </div>
-                <div className='containerProjects'>
-                    <div className='twoProjects'>
-                        <div className='box'>
-                            <div className='header'>
-                                <strong>En proceso...</strong>
-                                <h3>Software de gestión empresarial</h3>
+                            <div className='tl'>
+                                <h3>Diseñador</h3>
                                 <span>
-                                    Esto es una pequeña description del proyecto. Un ejemplo superficial de lo que
-                                    realmente se ha estado haciendo.
+                                    Me apasiona el diseño y el orden al momento de 
+                                    aterrizar ideas a la realidad. Amante del <strong>minimalismo</strong>. 
                                 </span>
                             </div>
-                            <div className='containerWallpaper'>
-                                <img src="https://149841302.v2.pressablecdn.com/wp-content/uploads/2021/06/adminty-html-dashboard-template.jpg" alt="" />
-                            </div>
-
-                            <div className="details">
-                                <button>
-                                    <span>Visitar</span>
-                                </button>
-                                <button className='dtl'>
-                                    <span>Detalles</span>
-                                </button>
-                            </div>
-
                         </div>
-
-                        <div className='box Gray'>
-                            <div className='header'>
-                                <strong>En proceso...</strong>
-                                <h3>Software de gestión empresarial</h3>
-                                <span>
-                                    Esto es una pequeña description del proyecto. Un ejemplo superficial de lo que
-                                    realmente se ha estado haciendo.
-                                </span> 
+                        <div className='contentPilar'>
+                            <div className='seccion'>
+                                <h3>Cosas que disfruto diseñando:</h3>
+                                <div className='res'>
+                                    <span>UX, UI, Web, Mobile</span>
+                                </div>
                             </div>
-                            <div className='containerWallpaper'>
-                                <img src="https://149841302.v2.pressablecdn.com/wp-content/uploads/2021/06/adminty-html-dashboard-template.jpg" alt="" />
-                            </div>
-                            
-                            <div className="details">
-                                <button>
-                                    <span>Visitar</span>
-                                </button>
-                                <button className='dtl'>
-                                    <span>Detalles</span>
-                                </button>
+                            <div className='seccion'>
+                                <h3>Herramientas de diseño:</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>Pluma y Papel</span>
+                                        </li>
+                                        <li>
+                                            <span>Excalidraw</span>
+                                        </li>
+                                        <li>
+                                            <span>Corel Draw</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className='pilar Center'>
+                        <div className='header'>
+                            <div className='icon'>
+                                <AiFillHome className='iconPilar' />
+                            </div>
+                            <div className='tl'>
+                                <h3>Fullstack Developer</h3>
+                                <span>
+                                    Me divierto demasiado desarrollando en el frontend, y codeando plataformas en el backend
+                                </span>
+                            </div>
+                        </div>
+                        <div className='contentPilar'>
+                            <div className='seccion'>
+                                <h3>Desarrollo Frontend</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>Javascript</span>
+                                        </li>
+                                        <li>
+                                            <span>ReactJS</span>
+                                        </li>
+                                        <li>
+                                            <span>Less</span>
+                                        </li>
+                                        <li>
+                                            <span>Redux</span>
+                                        </li>
+                                        <li>
+                                            <span>Bootstrap</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='seccion'>
+                                <h3>Desarrollo Backend</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>NodeJS</span>
+                                        </li>
+                                        <li>
+                                            <span>Python</span>
+                                        </li>
+                                        <li>
+                                            <span>PostgreSQL</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='seccion'>
+                                <h3>Desarrollo Mobile</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>React Native</span>
+                                        </li>
+                                        <li>
+                                            <span>Java</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='pilar'>
+                        <div className='header'>
+                            <div className='icon'>
+                                <AiFillHome className='iconPilar' />
+                            </div>
+                            <div className='tl'>
+                                <h3>Personal</h3>
+                                <span>
+                                    Me apasiona el aprendizaje y el autodesarrollo. <br /><br />
+                                </span>
+                            </div>
+                        </div>
+                        <div className='contentPilar'>
+                            <div className='seccion'>
+                                <h3>Idiomas:</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>Español (Natal)</span>
+                                        </li>
+                                        <li>
+                                            <span>Ingles (Intermedio)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='seccion'>
+                                <h3>Mis hobbies:</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>Leer</span>
+                                        </li>
+                                        <li>
+                                            <span>Escribir</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='seccion'>
+                                <h3>Mis pasiones</h3>
+                                <div className='navSeccion'>
+                                    <ul>
+                                        <li>
+                                            <span>Astronomía</span>
+                                        </li>
+                                        <li>
+                                            <span>Física</span>
+                                        </li>
+                                        <li>
+                                            <span>Codear</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div className='lastItemProjects'>
+                <div className='title'>
+                    <h1>Últimos Proyectos</h1>
+                    <span>Algunos proyectos personales de mi tiempo libre.</span>
+                </div>
+
+                <div className='containerLastProjects'>
+                    <div className='containerLast'>
+                        <div className='wallpaper'>
+                            <img src="https://res.cloudinary.com/dr8pv3hga/image/upload/v1716599704/screenshotsProjects/lattice/Diapositiva10_eb8rnf.jpg" alt="" />
+                        </div>
+                        <div className='desc'>
+                            <div className='containerDesc'>
+                                <div className='res'>
+                                    <strong>En desarrollo...</strong>
+                                    <h1>Lattice</h1>
+                                    <span>
+                                        Lattice ha sido un proyecto personal. Esta siendo desarrollado para que las
+                                        pequeñas empresas u emprendedores, logren automatizar algunos procesos (Finanzas, tareas, clientes, entre otros) de forma rápida y precisa.
+                                    </span>
+
+                                </div>
+                                <div className='btn'>
+                                    <button onClick={() => {
+                                        params.set('watch', 2);
+                                        setParams(params);
+                                    }}>
+                                        <span>Ver detalles</span>
+                                    </button>
+                                    <button className="link" onClick={() => {
+                                        window.open('https://lattice-cliente.vercel.app')
+                                    }}>Visitar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='containerLastProjects'>
+                    <div className='containerLast Reverse'>
+                        <div className='wallpaper'>
+                            <img src="https://res.cloudinary.com/dr8pv3hga/image/upload/v1716954016/nasur/landing.png" alt="" />
+                        </div>
+                        <div className='desc'>
+                            <div className='containerDesc'>
+                                <div className='res'>
+                                    <strong>En proceso...</strong>
+                                    <h1>NovaX</h1>
+                                    <span>
+                                        La plataforma NovaX esta siendo desarrollada en un intento por encontrar un punto de unión entre 
+                                        el mundo del azar, y las inversiones empresariales.
+                                    </span>
+                                
+                                </div>
+                                <div className='btn'>
+                                    <button onClick={() => {
+                                        params.set('watch', 8);
+                                        setParams(params);
+                                    }}>
+                                        <span>Ver proyecto</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='fotter'>
+                    <img src="https://mattfarley.ca/img/hero-devices.svg" alt="" />
                 </div>
             </div>
         </div>
