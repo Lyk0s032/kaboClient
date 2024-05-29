@@ -1194,6 +1194,42 @@ body {
   .home .twoSeccion .container .rightContainer .titleDescription span {
     font-size: 14px;
   }
+  .home .pilarsContainer {
+    width: 95%;
+  }
+  .home .pilarsContainer .containerPilar {
+    display: block;
+  }
+  .home .pilarsContainer .containerPilar .pilar {
+    width: 100%;
+    box-shadow: none;
+    padding: 5px 0px;
+  }
+  .home .lastItemProjects {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .home .lastItemProjects .containerLastProjects .containerLast {
+    display: block;
+    margin: 20px 0px;
+  }
+  .home .lastItemProjects .containerLastProjects .containerLast .wallpaper {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .home .lastItemProjects .containerLastProjects .containerLast .desc {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  .home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .res strong {
+    font-size: 12px;
+  }
+  .home .lastItemProjects .containerLastProjects .containerLast .desc .containerDesc .res span {
+    font-size: 12px;
+  }
   .home .skills {
     width: 95%;
   }
